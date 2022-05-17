@@ -61,9 +61,27 @@ a <- 3:33
 b <- 4:34
 c <- 5:35
 
+mattc <- cbind(a,c)
+mattr <- rbind(b,c,a)
 
 # FACTORS
 
+fac <- factor(c('first','second','third','second','apple'), levels = c('first', 'second', 'third','apple'))
 
-mattc <- cbind(a,c)
-mattr <- rbind(b,c,a)
+
+# assigning levels using gl()(generate factor level function) (don't really understand)
+
+facter <- gl(3, 3, 3)
+
+levels(facter)[1] <- "first"
+levels(facter)[2] <- "second"
+levels(facter)[3] <- "third"
+
+levels(facter) <- c("1", "2", "3")
+
+
+
+
+
+
+
