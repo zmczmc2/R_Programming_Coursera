@@ -42,6 +42,28 @@ second_list <- list(first_list, c('a','aa','aaa'), c(T,F,T,T,T,F))
 
 # MATRICES
 
+matty <- matrix(nrow = 3, ncol = 3)
+  
+matty2 <- matrix(nrow = 10, ncol = 3)
+  
+testdim <- 1:30
+
+dim(testdim) <- c(3,10)
+
+heymat <- c('a','b','c','d')
+
+dim(heymat) <- c(2,2)  
 
 
+# cbind and rbind
 
+a <- 3:33
+b <- 4:34
+c <- 5:35
+
+
+# FACTORS
+
+
+mattc <- cbind(a,c)
+mattr <- rbind(b,c,a)
