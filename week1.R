@@ -80,7 +80,9 @@ levels(facter)[3] <- "third"
 levels(facter) <- c("1", "2", "3")
 
 
+# Data Frames
 
+df <- data.frame(col1 = c(1,2,3), col2 = c("hey", 'bye', "good job"), col3 = c(TRUE, FALSE, FALSE))
 
 
 
